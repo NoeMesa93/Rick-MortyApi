@@ -1,1 +1,19 @@
-<p>character works!</p>
+<div class="container">
+    <div class="d-flex flex-md-row" id="characterContainer">
+        <div id="characterImage">
+            <figure class="img">
+                <img [src]="character?.image" [alt]="character?.name">
+            </figure>
+        </div>
+        <div class="d-flex flex-column justify-content-center m-5" id="characterInfo">
+            <h1>{{character?.name}}</h1>
+            <h3>Status: {{character?.status}}</h3>
+            <p>Specie: {{character?.species}}</p>
+            <p>Gender: {{character?.gender}}</p>
+            <p>Origin: {{character?.origin?.name}}</p>
+            <p>Location: {{character?.location?.name}}</p>
+        </div>
+    </div>
+
+    <a class="btn btn-success mt-2 w-25 p-2 mt-5" [routerLink]="['/characters']">Back</a>
+</div>

@@ -3,6 +3,21 @@ p {
     font-family: 'tomorrow', sans-serif;
 }
 
-.status {
-    font-weight: bold;
+
+.status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.alive {
+    background-color: green;
+}
+
+.dead {
+    background-color: red;
+}
+
+.unknown {
+    background-color: gray;
 }

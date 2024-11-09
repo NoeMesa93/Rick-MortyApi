@@ -1,14 +1,18 @@
 <div class="card">
     <figure class="mb-0">
-        <img class="img-fluid w-100" [src]="character.image" [alt]="character.name">
+        <img class="img-fluid w-100 rounded-top" [src]="character.image" [alt]="character.name">
     </figure>
     <section class="card-body">
         <h2>{{character.name}}</h2>
         <hr>
-        <div class="">
-            <p class="status">Status: {{character.status}}</p>
-            <p>Specie: {{character.species}}</p>
-            <p>Location: {{character.location.name}}</p>
+        <div class="p-2">
+            <div class="d-flex gap-3 align-items-center">
+                <p class="status border-danger m-0 font-weight-bold">Status: {{character.status}}</p>
+                <span class="status-indicator pl-5" [ngClass]="getStatusIndicator(character.status)"></span>
+            </div>
+            <p class="my-2">Specie: {{character.species}}</p>
+            <a class="btn btn-success mt-2" [routerLink]="['/characters', character.id]">See character</a>
+            <!-- Redirigimos la ruta con routerLink, un array de rutas. -->
         </div>
     </section>
 </div>
