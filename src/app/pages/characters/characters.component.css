@@ -1,0 +1,22 @@
+h1 {
+    font-family: 'Creepster', sans-serif;
+    font-weight: 300;
+    font-size: 5em;
+    padding-top: 30px;
+    background: linear-gradient(to right, #6effbb, #084327);
+    background-size: cover;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgb(60, 60, 60);
+
+}
+
+button {
+    font-family: 'tomorrow', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+#btnUnder {
+    margin-bottom: 20px;
+}

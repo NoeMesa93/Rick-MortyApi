@@ -1,0 +1,14 @@
+<div class="card">
+    <figure class="mb-0">
+        <img class="img-fluid w-100" [src]="character.image" [alt]="character.name">
+    </figure>
+    <section class="card-body">
+        <h2>{{character.name}}</h2>
+        <hr>
+        <div class="">
+            <p class="status">Status: {{character.status}}</p>
+            <p>Specie: {{character.species}}</p>
+            <p>Location: {{character.location.name}}</p>
+        </div>
+    </section>
+</div>

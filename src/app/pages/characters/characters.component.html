@@ -1,0 +1,21 @@
+<div class="row g-3 mx-4">
+    <h1 class="text-center">Characters</h1>
+    <div class="col-12">
+        <div class="d-flex justify-content-center gap-5">
+            <!-- Botones para cambiar de página -->
+            <button class="btn btn-success" (click)="previousPage()">Prev</button>
+            <button class="btn btn-success" (click)="nextPage()">Next</button>
+        </div>
+    </div>
+    <!-- Recorremos el array de personajes -->
+    @for(character of characters; track character.id) {
+    <app-card-character [character]="character" class="col-12 col-md-4 col-xl-3 p-2"></app-card-character>
+    }
+    <div class="col-12 mb-5">
+        <div class="d-flex justify-content-center gap-5">
+            <!-- Botones para cambiar de página -->
+            <button id="btnUnder" class="btn btn-success" (click)="previousPage()">Prev</button>
+            <button id="btnUnder" class="btn btn-success" (click)="nextPage()">Next</button>
+        </div>
+    </div>
+</div>
